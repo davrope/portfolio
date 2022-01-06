@@ -7,19 +7,22 @@ import {FaBars} from 'react-icons/fa';
 
 const Navbar = () => {
     return (
-        <Router >
+        <Router>
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/'>
-                        <h2>David</h2>
+                        <h2>David Rodríguez</h2>
                     </NavLogo>
 
                     <MobileIcon>
-                        <FaBars />
+                        <FaBars/>
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
                             <NavLinkS to='about'>About</NavLinkS>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinkS to='contact'>Contact</NavLinkS>
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>
@@ -37,7 +40,7 @@ const Nav = styled.nav`
     margin-bottom: 2em;
     
 
-    background-color: #f7f7f2;
+    background-color: #131200;
     height: 80px;
     // margin-top: -80px;
     display: flex;
@@ -48,7 +51,7 @@ const Nav = styled.nav`
     position: sticky;
     top:0;
     z-index: 10;
-    color: #f7f7f2;
+    
 
     @media screen and (max-width:960px){
         transition: 0.8s all ease;
@@ -65,7 +68,7 @@ const NavbarContainer = styled.nav`
 `
 
 const NavLogo = styled(LinkR)`
-    color: red;
+    color: #0fd27a;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -79,14 +82,17 @@ const NavLogo = styled(LinkR)`
 const  MobileIcon = styled.div`
     display: none;
 
-    @media screen and (mad-width: 768px){
-        display:block_;
+    @media screen and (max-width: 768px){
+        display:block;
         position: absolute;
         top: 0;
         right: 0;
         transform: translate (-100%, 60%);
-        font-size: 1.8 rem;
-        cuirsor: pointer;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #f7f7f2;
+        
+        /* background-color: green; */
     }
 `
 const NavMenu = styled.ul`
@@ -103,13 +109,14 @@ const NavMenu = styled.ul`
 
 const NavItem = styled.li`
     height: 80px;
+
 `
 
 
 
 
 const NavLinkS = styled(LinkS)`
-    color: #fff;
+    color: #f7f7f2;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -119,5 +126,37 @@ const NavLinkS = styled(LinkS)`
 
     &.active{
         border-bottom: 3px solid #01bf71;
+    }
+`
+
+const NavButton = styled.nav`
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px){
+        display: none;
+
+    }
+
+`
+
+const NavButtonLink = styled(LinkR)`
+    border-radius: 50px;
+    background: #01bf71;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2 ease-in-out;
+    text-decoration: none;
+
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #01bf71;
+        
     }
 `
