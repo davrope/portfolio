@@ -1,0 +1,71 @@
+Posibles paletas de colores:
+
+1{
+    #58A4B0,
+    D8DBE2,
+    A9BCD0,
+    373F51,
+    1b1be
+}
+
+2{
+    000000,
+    14213D,
+    FCA311,
+    E5E5E5,
+    FFFFFF
+}
+
+3{
+    F02D3A,
+    273043,
+    9197AE,
+    EFF6EE
+}
+
+Al parecer esta es la mejor hasta ahora
+4{
+    17255A,
+    F2542D,
+    F7F7F2,
+    00798C
+}
+
+5{
+    17255A,
+    F2542D,
+    F7F7F2,
+    5299D3
+}
+
+087E8B
+
+119DA4
+
+6{
+    17255A,
+    F7F7F2,
+    28965A,
+    2A6041
+}
+
+7{
+    17255A,
+    F7F7F2,
+    297373,
+    FF8552
+}
+
+8{
+    17255A,
+    F7F7F2,
+    131200,
+    FE5D26
+}
+
+9{
+    131200,
+    0fd27a,
+    f7f7f2,
+    33658a
+}
