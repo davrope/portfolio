@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import {FaTimes} from 'react-icons/fa';
 import {Link as LinkS} from 'react-scroll'
 
-const Sidebar = () => {
+const Sidebar = ({isOpen, toggle}) => {
     return (
-        <SidebarContainer>
-            <Icon>
+        <SidebarContainer isOpen = {isOpen} onClick={toggle} >
+            <Icon onClick={toggle}>
                 <CloseIcon/>
             </Icon>
             <SidebarWrapper>
@@ -88,7 +88,7 @@ const SidebarLink = styled(LinkS)`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 11.5rem;
+    font-size: 1.5rem;
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;

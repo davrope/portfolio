@@ -5,16 +5,16 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
 import {FaBars} from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
-        <Router>
+        <div>
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/'>
                         <h2>David Rodríguez</h2>
                     </NavLogo>
 
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle} >
                         <FaBars/>
                     </MobileIcon>
                     <NavMenu>
@@ -27,7 +27,7 @@ const Navbar = () => {
                     </NavMenu>
                 </NavbarContainer>
             </Nav>
-        </Router >
+        </div >
     )
 }
 

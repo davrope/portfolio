@@ -1,19 +1,20 @@
 import './App.css';
-import Navbar from './components/Navbar';
+
 import About from './components/About';
-import Sidebar from './components/Sidebar';
+
 import Projects from './components/Projects';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Home } from './components/Home';
 
 const App = () => {
   return (
-    <div>
-      
-        <Sidebar/>
-        <Navbar/>
+    <Router>
+
+        <Home/>
         <About />
         <Projects/>
       
-    </div>
+    </Router>
 
   );
 }
