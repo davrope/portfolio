@@ -1,14 +1,22 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import About from './components/About';
+import Sidebar from './components/Sidebar';
+import Projects from './components/Projects';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header" >
+    <div>
+      
+        <Sidebar/>
         <Navbar/>
-      </header>
+        <About />
+        <Projects/>
+      
     </div>
+
   );
 }
+
 
 export default App;
