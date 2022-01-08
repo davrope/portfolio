@@ -58,7 +58,10 @@ const Projects = () => {
         <div id = 'projects' style={{background: 'black', position: 'relative', display: 'flow-root'}}>
             <h2>Projects</h2>
             <h4>Here you can see some of my projects</h4>
-            <div style = {{display:'flex', alignItems: 'center', justifyContent: 'space-around'}}>
+            {/* <div style = {{display:'flex', alignItems: 'center', justifyContent: 'space-around'}}> */}
+            
+            <div className='card-group'>
+                
                 <div className="card" style={{width: "18rem", display:'flex', alignItems: 'center', justifyContent: 'space-around'}}>
                     <img src={tshirt} className="card-img-top" alt="..."/>
                     <div className="card-body">
@@ -67,7 +70,9 @@ const Projects = () => {
                         <a href="#" className="btn btn-primary">Live Demo</a>
                     </div>
                 </div>
+            
 
+            
                 <div className="card" style={{width: "18rem", display:'flex', alignItems: 'center', justifyContent: 'space-around'}}>
                     <img src={productivityimg} className="card-img-top" alt="..."/>
                     <div className="card-body">
@@ -76,6 +81,8 @@ const Projects = () => {
                         <a href="#" className="btn btn-primary">Live Demo</a>
                     </div>
                 </div>
+                
+
             </div>
 
                 
