@@ -7,27 +7,28 @@ import {FaBars} from 'react-icons/fa';
 
 const Navbar = ({toggle}) => {
     return (
-        <div>
-            <Nav>
-                <NavbarContainer>
-                    <NavLogo to='/'>
-                        <h2>David Rodríguez</h2>
-                    </NavLogo>
+        <Nav>
+            <NavbarContainer>
+                <NavLogo to='/'>
+                    <h2>David Rodríguez</h2>
+                </NavLogo>
 
-                    <MobileIcon onClick={toggle} >
-                        <FaBars/>
-                    </MobileIcon>
-                    <NavMenu>
-                        <NavItem>
-                            <NavLinkS to='about'>About</NavLinkS>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinkS to='contact'>Contact</NavLinkS>
-                        </NavItem>
-                    </NavMenu>
-                </NavbarContainer>
-            </Nav>
-        </div >
+                <MobileIcon onClick={toggle} >
+                    <FaBars/>
+                </MobileIcon>
+                <NavMenu>
+                    <NavItem>
+                        <NavLinkS to='about'>About</NavLinkS>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinkS to='contact'>Contact</NavLinkS>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinkS to='projects'>Projects</NavLinkS>
+                    </NavItem>
+                </NavMenu>
+            </NavbarContainer>
+        </Nav>    
     )
 }
 
@@ -37,20 +38,20 @@ const Nav = styled.nav`
     box-sizing: border-box;
     width: 100%;
     padding: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 0em;
     
 
-    background-color: #131200;
+    background-color: #000;
     height: 80px;
-    // margin-top: -80px;
+    margin-top: 0;
     display: flex;
     justify-content: center;
-    /* align-items:center; */
-    align-items: baseline;
+    align-items:center;
+    /* align-items: baseline; */
     font-size: 1rem;
     position: sticky;
     top:0;
-    z-index: 10;
+    z-index: 1;
     
 
     @media screen and (max-width:960px){

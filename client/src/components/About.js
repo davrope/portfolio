@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+
 
 const About = () => {
     return (
-        <div>
+        <div id = 'about' style={{background: 'black', position: 'relative', display: 'flow-root'}}>
 
             <h2>Hi, there!</h2>
             <h4>Welcome to my Web Developer Portfolio.</h4>

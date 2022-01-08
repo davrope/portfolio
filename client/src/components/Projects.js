@@ -5,7 +5,7 @@ import productivityimg from '../images/productivity.jpg'
 
 const Projects = () => {
     return (
-        <div>
+        <div id = 'projects' style={{background: 'black', position: 'relative', display: 'flow-root'}}>
             <h2>
                 Here you can see some of my web developer projects:
             </h2>
@@ -17,7 +17,7 @@ const Projects = () => {
                     <img src={tshirt} alt="Jane" style={{width:100}}/>
                     <div className='container'>
                         <h2>My Size</h2>
-                        <p className='description'>
+                        <p className='description' style={{color:'white'}}>
                             Front end created with react and the pose-detection API from Tensorflow. It helps you to decide which size of clothes would be the better fit considering the store database
                         </p>
                         <p><button className='button'>Live Demo</button> </p>
@@ -50,5 +50,10 @@ const Projects = () => {
         </div>
     )
 }
+
+
+
+
+
 
 export default Projects
