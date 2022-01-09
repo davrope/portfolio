@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Contact = () => {
+const Contactlab = () => {
     return (
         <div id = 'contact' style={{background: 'black', height:'100vh', width:'100vw'}}>
-            <div>
+            <div style= {{display:'flex', alignItems:'center', justifyContent:'center'}}>
                 <div className='d-flex justify-content-center'>
                     <h2>Contact</h2>
                 </div>
@@ -38,4 +38,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Contactlab

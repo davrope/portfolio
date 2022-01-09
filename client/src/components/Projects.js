@@ -17,7 +17,6 @@ const Projects = () => {
             <div className='d-flex justify-content-center'>
                 <div className='container'>
                     <div className='row'>
-
                         <div className='col-md-6 col-lg-4 col-xl-3 py-2'>
                             <div className='card text-center'>
                                 <div className="card h-100" style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
