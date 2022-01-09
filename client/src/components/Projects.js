@@ -55,103 +55,90 @@ import productivityimg from '../images/productivity.jpg'
 
 const Projects = () => {
     return (
-        <div id = 'projects' style={{background: 'white', position: 'relative', display: 'flow-root'}}>
-            <h2>Projects</h2>
-            <h4>Here you can see some of my projects</h4>
+        <div id = 'projects' style={{background: 'white', position: 'relative', display: 'flow-root', justifyContent:'center', alignItems:'center'}}>
+            <div className=' d-flex justify-content-center'>
+                <h2 style={{alignItems: 'center'}}>Projects</h2>                
+            </div>
+            <div className=' d-flex justify-content-center'>
+                <h4 style={{alignItems: 'center'}}>Here you can see some of my projects:</h4>
+            </div>
+
+
             {/* <div style = {{display:'flex', alignItems: 'center', justifyContent: 'space-around'}}> */}
-            
-            <div className='container' style={{justifyContent:'center'}}>
-                <div className='row'>
-                    <div className='col-md-6 col-lg-4 col-xl-3 py-2'>
+            <div className='d-flex justify-content-center'>
+                <div className='container'>
+                    <div className='row'>
 
-                
-                        <div className="card h-100" style={{width: "18rem", display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <img src={tshirt} className="card-img-top img-fluid" alt="..."/>
-                            <div className="card-body">
-                                <h5 className="card-title">My Size</h5>
-                                <p className="card-text" style = {{color:'black'}}>Front end created with react and the pose-detection API from Tensorflow. It helps you to decide which size of clothes would be the better fit considering the store database.</p>
-                                <a href="#" className="btn btn-primary">Live Demo</a>
+                        <div className='col-md-6 col-lg-4 col-xl-3 py-2'>
+                            <div className='card text-center'>
+                                <div className="card h-100" style={{display:'flex', alignItems: 'center', justifyContent: 'center'}}>
+                                    <img src={tshirt} className="card-img-top img-fluid" alt="..."/>
+                                    <div className="card-body">
+                                        <h5 className="card-title">My Size</h5>
+                                        <p className="card-text" style = {{color:'black'}}>Front end created with react and the pose-detection API from Tensorflow. It helps you to decide which size of clothes would be the better fit considering the store database.</p>
+                                        <a href="#" className="btn btn-primary"style={{background:'green'}}>Live Demo</a>
+                                    </div>
+                                    
+                                </div>
                             </div>
                         </div>
+
+                        <div className='col-md-6 col-lg-4 col-xl-3 py-2'>
+                            <div className='card text-center'>
+                                <div className="card h-100" style={{ display:'flex', alignItems: 'center', justifyContent: 'center'}}>
+                                    <img src={tshirt} className="card-img-top img-fluid" alt="..."/>
+                                    <div className="card-body">
+                                        <h5 className="card-title">My Size</h5>
+                                        <p className="card-text" style = {{color:'black'}}>Front end created with react and the pose-detection API from Tensorflow. It helps you to decide which size of clothes would be the better fit considering the store database.</p>
+                                        <a href="#" className="btn btn-primary " style={{background:'green'}}>Live Demo</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className='col-md-6 col-lg-4 col-xl-3 py-2'>
+                            <div className='card text-center'>
+                                <div className="card h-100" style={{ display:'flex', alignItems: 'center', justifyContent: 'center'}}>
+                                    <img src={productivityimg} className="card-img-top img-fluid" alt="..."/>
+                                    <div className="card-body">
+                                        <h5 className="card-title">Productivity App</h5>
+                                        <p className="card-text" style = {{color:'black'}}>Track the time of your projects with a simple but effective productivity app that includes a to-do list.</p>
+                                        <a href="#" className="btn btn-primary" style={{background:'green'}}>Live Demo</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* <div className='col-md-6 col-lg-4 col-xl-3 py-2'>
+                            <div className="card-h100" style={{width: "18rem", display:'flex', alignItems: 'center', justifyContent: 'center'}}>
+                                <img src={productivityimg} className="card-img-top img-fluid" alt="..."/>
+                                <div className="card-body">
+                                    <h5 className="card-title">Productivity App</h5>
+                                    <p className="card-text" style = {{color:'black'}}>Track the time of your projects with a simple but effective productivity app that includes a to-do list.</p>
+                                    <a href="#" className="btn btn-primary">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='col-md-6 col-lg-4 col-xl-3 py-2'>
+                            <div className="card-h100" style={{width: "18rem", display:'flex', alignItems: 'center', justifyContent: 'center'}}>
+                                <img src={productivityimg} className="card-img-top img-fluid" alt="..."/>
+                                <div className="card-body">
+                                    <h5 className="card-title">Productivity App</h5>
+                                    <p className="card-text" style = {{color:'black'}}>Track the time of your projects with a simple but effective productivity app that includes a to-do list.</p>
+                                    <a href="#" className="btn btn-primary">Live Demo</a>
+                                </div>
+                            </div>
+                        </div> */}
+
+    
                     </div>
-
-                    <div className='col-md-6 col-lg-4 col-xl-3 py-2'>
-
-                
-                        <div className="card h-100" style={{width: "18rem", display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <img src={tshirt} className="card-img-top img-fluid" alt="..."/>
-                            <div className="card-body">
-                                <h5 className="card-title">My Size</h5>
-                                <p className="card-text" style = {{color:'black'}}>Front end created with react and the pose-detection API from Tensorflow. It helps you to decide which size of clothes would be the better fit considering the store database.</p>
-                                <a href="#" className="btn btn-primary">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='col-md-6 col-lg-4 col-xl-3 py-2'>
-
-                
-                        <div className="card h-100" style={{width: "18rem", display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <img src={productivityimg} className="card-img-top img-fluid" alt="..."/>
-                            <div className="card-body">
-                                <h5 className="card-title">Productivity App</h5>
-                                <p className="card-text" style = {{color:'black'}}>Track the time of your projects with a simple but effective productivity app that includes a to-do list.</p>
-                                <a href="#" className="btn btn-primary">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='col-md-6 col-lg-4 col-xl-3 py-2'>
-
-                
-                        <div className="card h-100" style={{width: "18rem", display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <img src={productivityimg} className="card-img-top img-fluid" alt="..."/>
-                            <div className="card-body">
-                                <h5 className="card-title">Productivity App</h5>
-                                <p className="card-text" style = {{color:'black'}}>Track the time of your projects with a simple but effective productivity app that includes a to-do list.</p>
-                                <a href="#" className="btn btn-primary">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='col-md-6 col-lg-4 col-xl-3 py-2'>
-
-                
-                        <div className="card h-100" style={{width: "18rem", display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <img src={productivityimg} className="card-img-top img-fluid" alt="..."/>
-                            <div className="card-body">
-                                <h5 className="card-title">Productivity App</h5>
-                                <p className="card-text" style = {{color:'black'}}>Track the time of your projects with a simple but effective productivity app that includes a to-do list.</p>
-                                <a href="#" className="btn btn-primary">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* <div className='col-md-6 col-lg-4 col-xl-3 py-2'>
-                        <div className="card-h100" style={{width: "18rem", display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <img src={productivityimg} className="card-img-top img-fluid" alt="..."/>
-                            <div className="card-body">
-                                <h5 className="card-title">Productivity App</h5>
-                                <p className="card-text" style = {{color:'black'}}>Track the time of your projects with a simple but effective productivity app that includes a to-do list.</p>
-                                <a href="#" className="btn btn-primary">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='col-md-6 col-lg-4 col-xl-3 py-2'>
-                        <div className="card-h100" style={{width: "18rem", display:'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <img src={productivityimg} className="card-img-top img-fluid" alt="..."/>
-                            <div className="card-body">
-                                <h5 className="card-title">Productivity App</h5>
-                                <p className="card-text" style = {{color:'black'}}>Track the time of your projects with a simple but effective productivity app that includes a to-do list.</p>
-                                <a href="#" className="btn btn-primary">Live Demo</a>
-                            </div>
-                        </div>
-                    </div> */}
-
- 
                 </div>
             </div>
+
 
 
 
