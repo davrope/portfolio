@@ -8,12 +8,16 @@ import { Home } from './components/Home';
 import Contact from './components/Contact';
 
 
+
 const App = () => {
   return (
     <Router>
 
         <Home/>
-        <About />
+        {/* <About />
+         */}
+
+        <About/>
         <Projects/>
         <Contact/>
         
