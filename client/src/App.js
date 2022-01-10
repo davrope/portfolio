@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 
 
 
+
 const App = () => {
   return (
     <Router>
@@ -18,6 +19,7 @@ const App = () => {
         <About/>
         <Projects/>
         <Contact/>
+        
         
     </Router>
 
