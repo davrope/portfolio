@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
     return (
         <div id = 'contact' style={{background: 'black', height:'100vh', width:'100vw'}}>
-            <div>
+            <div  style= {{margin: 0, position:'relative', top:'35%'}}>
                 <div className='d-flex justify-content-center'>
                     <h2>Contact</h2>
                 </div>

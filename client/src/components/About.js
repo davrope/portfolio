@@ -4,9 +4,9 @@ import tshirt from '../images/tshirt.jpg';
 
 const About = () => {
     return (
-        <div id = 'about' className='container-fluid' style={{background: 'black', position: 'relative', display: 'flow-root'}}>
+        <div id = 'about' className='container-fluid' style={{background: 'black', position: 'relative', display: 'flow-root', height:'100vh', width:'100vw'}}>
             <div className='row'>
-                <div className='col align-self-start'>
+                <div className='col align-self-start'style={{alignItems:'center'}}>
                     <div className='d-flex justify-content-center'>
                         <h2>Hi, there!</h2>
                     </div>
