@@ -8,7 +8,7 @@ const HeroSection = () => {
         <HeroContainer id= "home">
             <HeroBg>
             {/* <VideoBg autoPlay loop muted >  */}
-                <VideoBg autoPlay loop muted> 
+                <VideoBg autoPlay loop muted style={{height:'auto',width:'100%'}}> 
                     <source src = {Video} type = 'video/mp4'></source>
                 </VideoBg>
             </HeroBg>
@@ -26,7 +26,7 @@ const HeroSection = () => {
 export default HeroSection
 
 
-const HeroContainer = styled.div`
+const HeroContainer = styled.body`
     background: black;
     display: flex;
     justify-content: center;
@@ -38,6 +38,9 @@ const HeroContainer = styled.div`
     height: 100%;
     width: 100%;
 
+    @media screen {
+     -o-object-fit   :cover ;
+    }
 
 `
 
