@@ -8,7 +8,8 @@ const Projects = () => {
             <section class="py-5 text-center container">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1 class="fw-light">Projects</h1>
+                        {/* <h1 class="fw-light">Projects</h1> */}
+                        <h1 className='display-5 fw-bold lh-1 mb-3'>Projects</h1>
                         <p class="lead text-muted">Here is a collection of my software development projects, including Machine Learning integration.</p>
                         
                     </div>
@@ -31,7 +32,7 @@ const Projects = () => {
                                     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                                     </div> */}
-                                    <a href="#" className="btn btn-primary" style={{background:'green'}}>Live Demo</a>
+                                    <a href="#" className="btn btn-primary" style={{background:'#00A3A3'}}>Live Demo</a>
                                     
                                 </div>
                                 </div>
@@ -45,7 +46,7 @@ const Projects = () => {
                                 <h5 className='card-title'>Productivity app</h5>
                                 <p class="card-text" style = {{color:'black'}}>Track the time of your projects with a simple but effective productivity app that includes a to-do list.</p>
                                 <div class="d-flex justify-content-center align-items-center">
-                                    <a href="#" className="btn btn-primary" style={{background:'green'}}>Live Demo</a>
+                                    <a href="#" className="btn btn-primary">Live Demo</a>
                                     
                                 </div>
                                 </div>
@@ -59,7 +60,7 @@ const Projects = () => {
                                 <h5 className='card-title'>Experiment</h5>
                                 <p class="card-text" style = {{color:'black'}}>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-center align-items-center">
-                                    <a href="#" className="btn btn-primary" style={{background:'green'}}>Live Demo</a>
+                                    <a href="#" className="btn btn-primary">Live Demo</a>
                                     
                                 </div>
                                 </div>

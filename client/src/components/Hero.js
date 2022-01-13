@@ -1,20 +1,24 @@
 import React from 'react'
 import tshirt from '../images/tshirt.jpg';
+import abstraction1 from '../images/abstraction1.jpg'
 import styled from 'styled-components'
 
 const Hero = () => {
     return (
         <div style={{ alignItems:'center', height:'100vh', width:'100vw'}}>
             <body className='d-flex h-100 text-center text-white bg-dark' style={sectionStyle}>
+                {/* <div  style= {{margin: 0, position:'relative', top:'5%'}}> */}
+                <div  style= {{alignItems:'center'}}>
                 
-                <div className='cover-container d-flex w-100 h-100 p-3 mx-auto flex-column'>
-                    <main className='px-3'>
-                        
-                        <h1>Cover your page</h1>
-                        <p className='lead'>Cover is a one page template for building simple and beautiful home pages. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <div className='cover-container d-flex w-100 h-100 p-3 mx-auto flex-column'>
+                        <main className='px-3'>
+                            
+                            <MyH1>Cover your page</MyH1>
+                            <MyP className='lead'>Cover is a one MyPage template for building simple and beautiful home pages. </MyP>
 
-                    </main>
-                    
+                        </main>
+                        
+                    </div>
                 </div>
             </body>
         </div>
@@ -24,27 +28,32 @@ const Hero = () => {
 export default Hero
 
 var sectionStyle = {
-    backgroundImage: `url(${tshirt})`,
-    backgroundSize: 'cover'
+    backgroundImage: `url(${abstraction1})`,
+    backgroundSize: 'cover',
+    alignItems:'center'
 
 }
 
-const HeroBg = styled.div`
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+// var aligncenter = {
+//     alignItems:'center'
+// }
+
+const MyH1 = styled.h1`
+    font-size: 120px;
+    font-family: fantasy;
+    
+
+    @media screen and (max-width:960px){
+        font-size: 80px;
+    }
 `
 
-const ImgBg = styled.img`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    /* position: static; */
-    object-fit: cover;
-    background: #232a34;
+const MyP = styled.p`
+    font-size: 60px;
+    /* font-family: fantasy; */
+    
+
+    @media screen and (max-width:960px){
+        font-size: 40px;
+    }
 `

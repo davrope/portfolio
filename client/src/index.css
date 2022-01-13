@@ -20,11 +20,13 @@ code {
 } */
 
 h1{
-  color: green;
+  color: #00A3A3;
+  /* font-family: 'Lato', sans-serif */
+
 }
 
 h2{
-  color: green;
+  color: #00A3A3;
 }
 
 p{
@@ -32,7 +34,7 @@ p{
 }
 
 h4{
-  color: purple;
+  color: #192BC2;
 }
 
 .div-back{
