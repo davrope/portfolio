@@ -1,6 +1,6 @@
 import React from 'react'
 import tshirt from '../images/tshirt.jpg';
-import abstraction1 from '../images/abstraction1.jpg'
+import abstraction2 from '../images/abstraction2.jpg'
 import styled from 'styled-components'
 
 const Hero = () => {
@@ -13,8 +13,8 @@ const Hero = () => {
                     <div className='cover-container d-flex w-100 h-100 p-3 mx-auto flex-column'>
                         <main className='px-3'>
                             
-                            <MyH1>Cover your page</MyH1>
-                            <MyP className='lead'>Cover is a one MyPage template for building simple and beautiful home pages. </MyP>
+                            <MyH1>Let's build an amazing future</MyH1>
+                            <MyP className='lead'>Using science and technology to build smart solutions for people and industry. </MyP>
 
                         </main>
                         
@@ -28,7 +28,7 @@ const Hero = () => {
 export default Hero
 
 var sectionStyle = {
-    backgroundImage: `url(${abstraction1})`,
+    backgroundImage: `url(${abstraction2})`,
     backgroundSize: 'cover',
     alignItems:'center'
 
@@ -40,7 +40,7 @@ var sectionStyle = {
 
 const MyH1 = styled.h1`
     font-size: 120px;
-    font-family: fantasy;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 
     @media screen and (max-width:960px){

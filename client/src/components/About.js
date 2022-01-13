@@ -101,7 +101,7 @@ const About = () => {
 
                 <div className='col-lg-6'>
                     <h1 className='display-5 fw-bold lh-1 mb-3'>About me</h1>
-                    <p className='lead' style={{color:'GrayText'}}>My name is David and this is a test for the about me page with react and bootstrap</p>
+                    <p className='lead' style={{color:'GrayText'}}>Hi, I'm David and I'm a chemical engineer and an self taught developer. My dream is to create scalable technologies that enables people to live and grow in a sustainable world.</p>
                     <div className='d-grip gap-2 d-md-flex justify-content-md-start'>
                         <button type = "button" className='btn btn-primary btn-lg px-4 me-md-2'>Primary</button>
                         <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
