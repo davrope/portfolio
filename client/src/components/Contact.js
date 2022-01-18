@@ -23,7 +23,15 @@ const Contact = () => {
                         <div className='form-group'>
                             <label for = "inputEmail" style={{color:'grey'}}>Email address</label>
                             <input type = 'email' className='form-control' id = 'inputEmail' aria-describedby="emailHelp" placeholder="Enter email"/>
-                            <small id = "emailhelp" className=' form-text text-muted'>I'll never share your email</small>
+                            {/* <small id = "emailhelp" className=' form-text text-muted'>I'll never share your email</small> */}
+                        </div>
+                    </div>
+
+                    <div className='d-flex justify-content-center'>
+                        <div className='form-group'>
+                            <label for = "comment" style={{color:'grey'}}>Describe your idea</label>
+                            <input type = 'string' className='form-control' id = 'describeidea' aria-describedby="emailHelp" placeholder="Enter email"/>
+                            
                         </div>
                     </div>
 
