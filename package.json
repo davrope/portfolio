@@ -4,13 +4,18 @@
   "description": "1st iteration of software developer portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "server": "nodemon server.js --ignore'./client/'",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "davrope",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^7.0.0",
     "cors": "^2.8.5",
     "express": "^4.17.2",
-    "nodemailer": "^6.7.2"
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15"
   }
 }

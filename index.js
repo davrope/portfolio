@@ -3,7 +3,7 @@ const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer")
 
-
+const { user, pass } = require("./config/dev")
 
 // const mongoose = require('mongoose');
 // const cookieSession = require('cookie-session');
@@ -40,18 +40,36 @@ app.use("/", router);
 // // require('./routes/billingRoutes')(app);
 // require('./routes/projectRoutes')(app);
 
-// if (process.env.NODE_ENV === 'production'){
-//     //Express will serve up production assets
-//     //like our main.js file, or main.css file
-//     app.use(express.static('client/build'));
+if (process.env.NODE_ENV === 'production'){
+    //Express will serve up production assets
+    //like our main.js file, or main.css file
+    app.use(express.static('client/build'));
 
-//     //Express will serve up the index.html file
-//     //if it doesn't recognize the route
-//     const path = require('path');
-//     app.get('*', (req, res)=>{
-//         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-//     });
-// }
+    //Express will serve up the index.html file
+    //if it doesn't recognize the route
+    const path = require('path');
+    app.get('*', (req, res)=>{
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    });
+}
+
+// EMAIL CONFIG
+const contactEmail = nodemailer.createTransport({
+    service: 'gmail',
+    auth:{
+        user: user,
+        pass: pass
+    },
+
+});
+
+contactEmail.verify((error)=>{
+    if(error) {
+        console.log(error);
+    }else{
+        console.log("Ready to send")
+    }
+});
 
 
 
