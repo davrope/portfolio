@@ -3,14 +3,14 @@ const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer")
 
-const { user, pass } = require("./config/dev")
+
 
 // const mongoose = require('mongoose');
 // const cookieSession = require('cookie-session');
 // const passport = require('passport');
-// const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
-// const keys = require('./config/keys');
+const keys = require('./config/keys');
 // require('./models/User');
 // require('./models/Project');
 // require('./services/passport');
@@ -23,6 +23,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
+// app.use(bodyParser.urlencoded())
 
 
 // app.use(bodyParser.json());
@@ -57,8 +58,14 @@ if (process.env.NODE_ENV === 'production'){
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     auth:{
-        user: user,
-        pass: pass
+        type:'OAuth2',
+        user: keys.user,
+        clientId: keys.googleClientID,
+        clientSecret: keys.googleClientSecret,
+        refreshToken: keys.refreshToken,
+        accessToken:keys.accessToken,
+
+
     },
 
 });
@@ -71,6 +78,32 @@ contactEmail.verify((error)=>{
     }
 });
 
+
+
+// SETUP THE ROUTER AND SEND EMAIL
+
+router.post("/contact", (req, res)=>{
+    const name = req.body.name;
+    const email = req.body.email;
+    const message = req.body.message;
+    const mail={
+        from: name,
+        to: keys.user,
+        subject: "Contact form submission",
+        html: `<p>Name: ${name}</p>
+        <p>Email: ${email}</p>
+        <p>Message: ${message}</p>`,
+    };
+
+    contactEmail.sendMail(mail, (error)=>{
+        if(error){
+            res.json({status: "ERROR"});
+
+        }else{
+            res.json({status:"Message Sent"});
+        }
+    });
+});
 
 
 const PORT = process.env.PORT || 5000;
