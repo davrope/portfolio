@@ -32,7 +32,7 @@ const Projects = () => {
                                     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                                     </div> */}
-                                    <a href="#" className="btn btn-primary" style={{background:'#00A3A3'}}>Live Demo</a>
+                                    <a href="#" className="btn btn-primary" style={{background:'#27d594'}}>Live Demo</a>
                                     
                                 </div>
                                 </div>
@@ -46,7 +46,7 @@ const Projects = () => {
                                 <h5 className='card-title'>Productivity app</h5>
                                 <p class="card-text" style = {{color:'black'}}>Track the time of your projects with a simple but effective productivity app that includes a to-do list.</p>
                                 <div class="d-flex justify-content-center align-items-center">
-                                    <a href="#" className="btn btn-primary">Live Demo</a>
+                                    <a href="#" className="btn btn-primary" style={{background:'#27d594'}}>Live Demo</a>
                                     
                                 </div>
                                 </div>
@@ -60,7 +60,7 @@ const Projects = () => {
                                 <h5 className='card-title'>Experiment</h5>
                                 <p class="card-text" style = {{color:'black'}}>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-center align-items-center">
-                                    <a href="#" className="btn btn-primary">Live Demo</a>
+                                    <a href="#" className="btn btn-primary" style={{background:'#27d594'}}>Live Demo</a>
                                     
                                 </div>
                                 </div>

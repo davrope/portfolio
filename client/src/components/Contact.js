@@ -62,8 +62,8 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className='d-flex justify-content-center'>
-                        <button type='submit' className='btn btn-primary'>{status} </button>
+                    <div className='d-flex justify-content-center' >
+                        <button type='submit' className='btn btn-primary' style={{background:'#27d594', marginTop: 10}}>{status} </button>
                     </div>
 
                 </form>
