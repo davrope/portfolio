@@ -2,6 +2,7 @@ import React from 'react'
 import tshirt from '../images/tshirt.jpg';
 import productivityimg from '../images/productivity.jpg'
 
+
 const Projects = () => {
     return (
         <div id ='projects'>
