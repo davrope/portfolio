@@ -104,7 +104,7 @@ const About = () => {
                     <h1 className='display-5 fw-bold lh-1 mb-3'>About me</h1>
                     <p className='lead' style={{color:'GrayText'}}>Hi, I'm David and I'm a chemical engineer and an self taught developer. My dream is to create scalable technologies that enables people to live and grow in a sustainable world.</p>
                     <div className='d-grip gap-2 d-md-flex justify-content-md-start'>
-                        <a href={cv2022} download ="DavidRodriguezResume.pdf" className='btn btn-primary btn-lg px-4 me-md-2' style={{background:'#27d594'}}>Download my CV</a>
+                        <a href={cv2022} download ="DavidRodriguezResume.pdf" className='btn  btn-lg px-4 me-md-2' style={{background:'#27d594', color:'white'}}>Download my CV</a>
                         {/* <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> */}
                     </div>
                 </div>
