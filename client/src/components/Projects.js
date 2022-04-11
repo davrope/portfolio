@@ -23,13 +23,13 @@ const Projects = () => {
                         <p className="lead text-muted">My learning method includes practicing by creating projects. Here is a collection of my software development projects.<br></br> My technology stack:.</p>
                     </div>
                     <div>
-                        <img src={reactlogo} alt="react logo" width="50px" height="50px"/>
-                        <img src={javascript} alt="javascript logo" width="50px" height="50px"/>
-                        <img src={node} alt="node logo" width="50px" height="50px"/>
-                        <img src={mongo} alt="mongodb logo" width="186px" height="50px"/>
-                        <img src={redux} alt="redux logo" width="50px" height="50px"/>
-                        <img src={py} alt="react logo" width="50px" height="50px"/>
-                        <img src={tflogo} alt="tensorflow logo" width="50px" height="50px"/>
+                        <img className='imglogos' src={reactlogo} alt="react logo" width="50px" height="50px"/>
+                        <img className='imglogos' src={javascript} alt="javascript logo" width="50px" height="50px"/>
+                        <img className='imglogos' src={node} alt="node logo" width="44px" height="50px"/>
+                        <img className='imglogos' src={mongo} alt="mongodb logo" width="186px" height="50px"/>
+                        <img className='imglogos' src={redux} alt="redux logo" width="52px" height="50px"/>
+                        <img className='imglogos' src={py} alt="python logo" width="50px" height="50px"/>
+                        <img className='imglogos' src={tflogo} alt="tensorflow logo" width="47px" height="50px"/>
                         
 
                     </div>
