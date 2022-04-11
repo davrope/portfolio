@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const Hero = () => {
     return (
         <div style={{ alignItems:'center', height:'100vh', width:'100vw'}}>
-            <body className='d-flex h-100 text-center text-white bg-dark' style={sectionStyle}>
+            <div className='d-flex h-100 text-center text-white bg-dark' style={sectionStyle}>
                 {/* <div  style= {{margin: 0, position:'relative', top:'5%'}}> */}
                 <div  style= {{alignItems:'center'}}>
                 
@@ -20,7 +20,7 @@ const Hero = () => {
                         
                     </div>
                 </div>
-            </body>
+            </div>
         </div>
     )
 }
