@@ -57,7 +57,7 @@ const Contact = () => {
                     <div className='d-flex justify-content-center'>
                         <div className='form-group'>
                             <label htmlFor = "message" style={{color:'grey'}}>Describe your idea</label>
-                            <textarea type = 'string' rows = "10" cols = "20" className='form-control' style={{height:'80px', textAlign:'center', width:'207px'}} id = 'message' aria-describedby="message" placeholder="Your idea" required/>
+                            <textarea type = 'string' rows = "10" cols = "20" className='form-control' style={{height:'80px', textAlign:'center', width:'232px'}} id = 'message' aria-describedby="message" placeholder="Your idea" required/>
                             
                         </div>
                     </div>
