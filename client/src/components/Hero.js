@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <div style={{ alignItems:'center', height:'100vh', width:'100vw'}}>
             <div className='d-flex h-100 text-center text-white bg-dark' style={sectionStyle}>
-                {/* <div  style= {{margin: 0, position:'relative', top:'5%'}}> */}
+
                 <div  style= {{alignItems:'center'}}>
                 
                     <div className='cover-container d-flex w-100 h-100 p-3 mx-auto flex-column'>
@@ -33,10 +33,6 @@ var sectionStyle = {
     alignItems:'center'
 
 }
-
-// var aligncenter = {
-//     alignItems:'center'
-// }
 
 const MyH1 = styled.h1`
     font-size: 120px;

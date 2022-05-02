@@ -19,7 +19,7 @@ const About = () => {
                     </p>
                     <div className='d-grip gap-2 d-md-flex justify-content-md-start'>
                         <a href={cv2022} download ="DavidRodriguezResume.pdf" className='btn  btn-lg px-4 me-md-2' style={{background:'#27d594', color:'white'}}>Download my CV</a>
-                        {/* <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> */}
+                        
                     </div>
                 </div>
             </div>
