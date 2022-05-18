@@ -1,6 +1,6 @@
 import React from 'react'
-import tshirt from '../images/tshirt.jpg';
-import abstraction2 from '../images/abstraction2.jpg'
+// import tshirt from '../images/tshirt.jpg';
+import abstraction2 from '../images/abstraction2.webp'
 import styled from 'styled-components'
 
 const Hero = () => {

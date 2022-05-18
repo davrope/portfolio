@@ -1,15 +1,15 @@
 import React from 'react'
-import tshirt from '../images/tshirt.jpg';
-import productivityimg from '../images/productivity.jpg'
-import logotang from '../images/logotang.png'
-import mirrorsize from '../images/mirrorsize.PNG'
-import reactlogo from '../images/logo192.png'
-import javascript from '../images/javascript.png'
-import node from '../images/node.png'
-import mongo from '../images/mongodb.png'
-import redux from '../images/redux.png'
-import tflogo from '../images/tf.png'
-import py from '../images/pylogo.png'
+// import tshirt from '../images/tshirt.jpg';
+import productivityimg from '../images/productivity.webp'
+import logotang from '../images/logotang.webp'
+import mirrorsize from '../images/mirrorsize.webp'
+import reactlogo from '../images/logo192.webp'
+import javascript from '../images/javascript.webp'
+import node from '../images/node.webp'
+import mongo from '../images/mongodb.webp'
+import redux from '../images/redux.webp'
+import tflogo from '../images/tf.webp'
+import py from '../images/pylogo.webp'
 
 
 const Projects = () => {

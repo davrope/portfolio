@@ -1,5 +1,5 @@
 import React from 'react'
-import tshirt from '../images/tshirt.jpg'
+import tshirt from '../images/tshirt.webp'
 import cv2022 from '../images/cv2022.pdf'
 
 
